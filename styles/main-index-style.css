@@ -1,0 +1,598 @@
+*{
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+/* blue-color: #2469d6 dark-blue: #1b50a6 */
+
+body{
+    overflow-x: hidden;
+    
+}
+
+*::selection{
+    color: white;
+    background-color:#2469d6 ;
+}
+
+*:focus{
+    outline: 1px solid #2469d6;
+}
+
+button{
+    display: block;
+    background-color: unset;
+    border: none;
+    cursor: pointer;
+}
+
+.bold{
+    text-transform: uppercase;
+
+}
+
+.blue-text{
+    color: #2469d6;
+    font-size: 37px;
+    
+}
+
+input, textarea{
+    border: none;
+    border-radius: none;
+    background-color: unset;
+    
+}
+
+span,a,p,li,ul,ol,h1,h2,h3,h4,h5,h6{
+    font-size: unset;
+    font-weight: unset;
+    font-style: none;
+    color: unset;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+
+.blue-btn{
+    width: 100%;
+    max-width: fit-content;
+    padding: 10px 30px;
+    background-color: #2469d6;
+    margin: 0 auto;
+    display: block;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    
+    
+    &:focus{
+	outline: 3px solid white;
+
+    }
+
+
+    &:active{
+	background-color:#1b50a6; 
+;
+    }
+
+}
+
+.blue-line{
+    display: block;
+    border: none;
+    padding: 3px;
+    background-color: #2469d6;
+    margin: 0 300px;
+    width: 100%;
+    max-width: 600px;
+
+
+}
+
+.gray-line{
+    width: 100%;
+    max-width: 600px;
+    padding: 1px 0;
+    margin: 0 auto;
+    background-color: gray;
+    border: none;
+
+
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 20px;
+
+    width: 100%;
+    max-width: 1300px;
+    
+}
+
+/* header section */
+
+.header{
+    width: 100%;
+    padding: 20px 0;
+    
+}
+
+.header__block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+        
+}
+
+.logo-block{
+    width: 100%;
+    max-width: 415px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    
+}
+
+.logo{
+    width: 100%;
+    max-width: 130px;
+    
+
+}
+
+.logo-block__title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    
+
+    font-size: 40px;
+    font-weight: 900;
+
+}
+
+/* work time */
+
+.work-time{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: fit-content;
+    width: 100%;
+
+    font-weight: 900;
+    font-size: 17px;
+    word-spacing: 4px;
+    gap: 4px;
+    
+    text-align: center;
+
+}
+
+/* contacts */
+
+.contacts{
+    max-width: fit-content;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    gap: 8px;
+
+    font-size: 17px; 
+
+}
+
+.phone-number{
+    text-decoration: underline;
+
+}
+
+/* main section */
+
+.main{
+    margin: 40px 0 0 0;
+    padding: 100px 0;
+    
+    color: white;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #2469d6;
+    height: calc(80dvh - 16px);    
+    
+    text-align: center;
+
+    animation: backgoundChagner 120s 0s linear infinite alternate forwards;
+
+}
+
+.main-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: fit-content;
+    width: 100%;
+    
+    
+    
+}
+
+.message-icon{
+    width: 35px;
+    
+    clip-path: polygon(18% 86%, 18% 33%, 83% 32%, 83% 73%, 34% 73%);
+    background-color: white;
+    display: block;
+    height: 35px;
+    
+
+}
+
+
+.title{
+    font-size: 45px;
+    font-weight: 900;
+    margin: 0 0 30px 0;
+
+    
+    text-shadow: 5px 5px 8px black;
+
+
+
+}
+
+.sub-title{
+    font-size: 28px;
+    font-weight: 900;
+    margin: 40px 0 0 0;
+
+    text-shadow: 5px 5px 8px black;
+
+
+}
+
+
+.title-block{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 0 90px;
+        
+}
+
+.work-time_adaptiv{
+    display: none;
+    margin: 10px 0 0 0;
+    width: 100%;
+    max-width: 140px;   
+
+}
+
+/* email window */
+
+.email-window{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    
+    margin: 0 auto;
+    padding: 0 0 40px 0;
+
+    width: 100%;
+
+    height: 100dvh;
+    background-color: rgb(0, 0, 0, 0.3);
+    z-index: 10;
+    
+
+}
+
+.email-window__inner{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin: 0 80px;
+
+    padding: 70px 30px 20px;
+    
+
+    width: 100%;
+    max-width: 470px;
+
+    height: 650px;
+    background-color: white;
+    border: 5px solid  #2469d6;
+    z-index: 11;
+    top: 90px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+
+.exit{
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+
+    object-fit: cover;
+    object-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-position: center;
+	    
+    background-image: url("../static/icons/krest.png");
+
+    top: 10px;
+    bottom: 0;
+    left: 8px;
+    right: 0;
+
+    cursor: pointer;
+    
+}
+
+.exit:focus{
+    outline: 2px solid red;
+}
+
+.exit:active{
+    transform: translate(5px, 5px);
+}
+
+.blue-line_email{
+    margin: 50px 0 50px 0;
+}
+
+.email-window__title{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.email-form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 20px;
+    width: 100%;
+    
+}
+
+.email-form__input{
+    font-size: 18px;
+    font-weight: 100;
+    border-bottom: 1px solid #2469d6;
+    padding: 0 0 2px 0;
+
+    outline: none;
+    
+    &:focus{
+	border-bottom: 2px solid #2469d6;
+    }
+}
+
+.email-form__textarea{
+    margin: 30px auto;
+    font-size: 15px;
+    width: 100%;
+    
+    max-width: 470px !important;
+    height: 120px;
+    resize: vertical;
+    
+    overflow-y: scroll;
+    overflow-x: unset;
+    
+    max-width: fit-content;
+    
+    &::placeholder{
+	font-size: 18px;
+    }
+    
+}
+
+
+
+
+
+
+
+@keyframes backgoundChagner {
+    0%, 20%{
+	background-image: url("../static/images/backchange1.png");
+    }
+    21%, 40%{	
+	background-image: url("../static/images/backchange2.png");
+    }
+    41%, 60%{
+	background-image: url("../static/images/backchange3.png");
+    }
+    61%, 80%{
+	background-image: url("../static/images/backchange4.png");
+    }
+    81%, 100%{
+	background-image: url("../static/images/backchange3.png");
+    }
+    
+}
+
+
+@media screen and (max-width: 1100px){
+    .work-time{
+	flex-direction: column;
+    }
+}
+@media screen and (max-width: 850px){
+    .logo{
+	max-width: 80px;
+    }
+    .logo-block{
+    max-width: fit-content;
+    }
+    .blue-text{
+	font-size: 28px;
+    }
+    .logo-block__title{
+	font-size: 31px;
+    }
+    .work-time{
+	display: none;
+    }
+    .work-time_adaptiv{
+	display: flex;
+    }
+    .title{
+	font-size: 30px;
+    }
+    .sub-title{
+	font-size: 22px;
+    }
+    .blue-btn{
+	font-size: 15px;
+    }
+    .gray-line{
+	max-width: 460px;
+    }
+    .blue-line{
+	width: 60%;
+    }
+    .main{
+	padding: 55px 0;
+    }
+    .title-block{
+	margin: 0 0 65px 0;
+    }
+}
+@media screen and (max-width: 550px){
+    .logo-block{
+	flex-direction: column;	
+    }
+    .work-time_adaptiv{
+	font-size: 15px;
+    }
+    .title-block{
+	margin: 0 0 45px 0;
+    }
+    .blue-line{
+	padding: 2px 0;
+    }
+    .title{
+	margin: 0 0 20px 0;
+    }
+    .sub-title{
+	margin: 25px 0 0 0 ;
+    }
+    .title-block{
+	margin: 0 0 30px 0;
+    }
+    .main{
+	
+	margin: 20px 0 0 0;
+    }
+    
+
+}
+@media screen and (max-width: 470px){
+    .logo-block__title{
+	font-size: 20px;
+    }
+    .blue-text{
+	font-size: 17px;
+    }
+    .contacts{
+	font-size: 13px;
+    }
+    .gray-line{
+	max-width: 250px;
+    }
+    .title{
+	font-size: 22px;
+    }
+    .sub-title{
+	font-size: 13px;
+    }
+    .blue-btn{
+	padding: 2px 20px;    
+    }
+    .email-window__title{
+	font-size: 24px;
+    }
+    .blue-line_email{
+	margin: 25px 0 25px 0;
+    }
+    .email-window__inner{
+	height: 525px;
+    }
+    .email-form__textarea{
+	height: 80px;
+    }
+    
+}
+
+
+
+    /* BURGER MENU */
+
+/* .burger{ */
+/*     width: 50px; */
+/*     height: 50px; */
+
+/*     display: flex; */
+/*     flex-direction: column; */
+/*     align-items: center; */
+/*     justify-content: center; */
+/*     gap: 15px; */
+
+    
+
+/* } */
+
+/* .burger__el{ */
+ /*     width: 100%; */
+/*     height: 2px; */
+    
+/*     display: block; */
+	    
+
+/* } */
+
+

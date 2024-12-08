@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+  <link href="./styles/main-index-style.css" rel="stylesheet">
+  <link href="./styles/font.css" rel="stylesheet">
+
+  <script defer src="./scripts/script.js"></script>
+  <title>House Spravki</title>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@latest/dist/email.min.js"></script>
+
+
+</head>
+<body>
+  
+  <div class="email-window">
+    
+    <div class="email-window__inner">
+      <div class="exit" title="hide"></div>
+
+      <h2 class="email-window__title">Отправить Email сообщение</h2>
+      <hr class="blue-line blue-line_email" />
+
+      <form id="emailForm" class="email-form">
+        <input class="email-form__input" type="text" id="userName" placeholder="Имя" required />
+        <input class="email-form__input" type="text" id="userCity" placeholder="Город" required />
+        <input class="email-form__input" type="text" id="userPhone" name="userPhone" placeholder="Номер телефона" pattern="^\+?\d*$" required>
+        <textarea class="email-form__textarea" id="message" placeholder="Ваше сообщение" required></textarea>
+        <button class="email-form__btn blue-btn" type="submit">Отправить</button>
+    </form>
+    </div>
+
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__block">
+	<div title="House Spravki" tabindex="1" class="logo-block">
+	  <img class="logo" alt="main logo House Spravki" src="./static/icons/houseSpravki-icon.png" />
+	  <h2 class="logo-block__title">
+	    <span class="blue-text">House</span>
+
+	    <bold class="bold">Spravki</b>
+	    
+	  </h2>
+	  
+	</div>
+
+<div tabindex="2" title="с 9:00 до 23:00" class="work-time">
+	  <span class="bold">ЕЖЕДНЕВНО</span>
+	  <span>с 9:00 до 23:00</span>
+	  <span>без выходных</span>
+		
+</div>
+
+	<div class="contacts" tabindex="3">
+	  <a tabindex="4" class="phone-number phone-number_first phone-number_before" href="tel:+79855458575">+7 985 545-85-75</a>
+	  <a tabindex="5" class="phone-number phone-number_second phone-number_before" href="tel:+79975467487">+7 997 546-74-87</a>
+
+	  <a tabindex="6" class="email email_before"  href="mailto:hausspravki@gmail.com">hausspravki@gmail.com</a>
+	  
+	</div>
+	
+      </div>
+      
+<div tabindex="2" title="с 9:00 до 23:00" class="work-time work-time_adaptiv">
+	  <span class="bold">ЕЖЕДНЕВНО</span>
+	  <span>с 9:00 до 23:00</span>
+	  <span>без выходных</span>
+		
+</div>
+
+    </div>
+    
+  </header>
+
+
+<hr class="gray-line">
+
+<main class="main">
+  <div class="container">
+    <div class="main__block">
+      <div class="title-block">
+	<h1 class="title">Выписки и справки в Москве и Московской области</h1>
+
+	<hr class="blue-line" />
+
+	<h2 class="sub-title">Срочная подготовка документов. Выписки ЕГРН, БТИ, Росреестр и другие</h2>
+	
+      </div>
+
+      <button tabindex="7" class="blue-btn emailBtn">
+	<div class="message-icon"></div>
+	проконсультироваться
+
+      </button>
+      
+    </div>
+
+  </div>
+
+</main>
+
+
+
+
+
+  <!-- <div class="burger"> 
+			    -->
+
+  <!--   <hr class="burger__el" /> -->
+  <!--   <hr class="burger__el" /> -->
+    
+  <!-- </div> -->
+
+</body>
+</html>
